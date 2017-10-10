@@ -10,8 +10,8 @@ include::toggle.adoc[]
 
 Support for JSR-352 has been fully implemented. This section is not a replacement for
         the spec itself and, instead, explains how the JSR-352 specific concepts apply to Spring Batch.
-        Additional information on JSR-352 can be found via the
-        JCP here: link:$$https://jcp.org/en/jsr/detail?id=352$$[https://jcp.org/en/jsr/detail?id=352]
+        Additional information on JSR-352 can be found in the
+        JCP at link:$$https://jcp.org/en/jsr/detail?id=352$$[https://jcp.org/en/jsr/detail?id=352]
 
 [[jsrGeneralNotes]]
 
@@ -238,7 +238,7 @@ public class BatchConfiguration {
 
 The assembly of Spring contexts (imports and so on) works with JSR-352 jobs as it would with any other
             Spring-based application. The only difference with a JSR-352-based job is that the entry point for the
-            context definition will be the job definition found in /META-INF/batch-jobs/.
+            context definition is the job definition found in /META-INF/batch-jobs/.
 
 To use the thread context class loader approach, you need only provide the fully qualified class
             name as the ref.  It is important to note that, when using this approach or the `batch.xml` approach, the class
